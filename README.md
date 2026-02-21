@@ -1,11 +1,11 @@
 # North — AI Life Guide App
 
-A personal AI companion that helps you navigate daily life through guided check-ins, reflections, and actionable insights. Built with Expo SDK 54 and powered by Claude AI.
+A personal AI companion that helps you navigate daily life through guided check-ins, reflections, and actionable insights. Built with Expo SDK 54 and powered by AI.
 
 ## Features
 
 - **Daily Check-In** — guided emotional and productivity check-in flow
-- **AI Insights** — personalized life guidance powered by Claude API
+- **AI Insights** — personalized life guidance powered by Anthropic API
 - **Streaks & Engagement** — daily streak tracking with animations and rewards
 - **Notion Integration** — sync your reflections and insights to Notion via OAuth
 - **Onboarding Flow** — beautiful multi-step onboarding experience
@@ -16,7 +16,7 @@ A personal AI companion that helps you navigate daily life through guided check-
 - **React Native / Expo SDK 54** — cross-platform mobile framework
 - **Expo Router v4** — file-based navigation
 - **TypeScript** — type-safe development
-- **Claude AI (Anthropic API)** — intelligent life guidance
+- **Anthropic API** — intelligent life guidance
 - **Expo SecureStore** — encrypted credential storage
 - **Notion API** — OAuth-based journal sync
 - **RevenueCat** — subscription management
@@ -40,7 +40,7 @@ north/
 │   ├── context/                  # React Context (AppContext)
 │   ├── hooks/                    # Custom hooks (useInsight)
 │   ├── services/                 # API integrations
-│   │   ├── ai.ts                 # Claude AI service
+│   │   ├── ai.ts                 # AI service
 │   │   ├── notion.ts             # Notion OAuth + sync
 │   │   └── purchases.ts         # RevenueCat service
 │   ├── types/                    # TypeScript definitions
@@ -55,7 +55,7 @@ north/
 3. Create `src/constants/config.ts` with your API keys:
    ```ts
    export const CONFIG = {
-     CLAUDE_API_KEY: 'your-claude-api-key',
+     AI_API_KEY: 'your-api-key',
      NOTION_CLIENT_ID: 'your-notion-client-id',
      NOTION_CLIENT_SECRET: 'your-notion-client-secret',
      REVENUECAT_API_KEY_IOS: 'your-revenuecat-key',
